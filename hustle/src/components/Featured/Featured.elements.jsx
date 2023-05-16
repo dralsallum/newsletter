@@ -12,6 +12,9 @@ export const Feature = styled.div`
   margin-top: 4.5rem;
   margin-bottom: 2.5rem;
 
+  @media (max-width: 920px) {
+    margin-top: 3.5rem;
+  }
 `;
 
 export const Post = styled.div`
@@ -27,13 +30,22 @@ export const FeaturedContainer = styled(Container)`
 display: flex;
 justify-content: space-around;
 
+
+@media (max-width: 920px) {
+  flex-direction: column;
+  gap: 3rem;
+}
+
 ${Container}
+
 `;
 
 export const FeaturedContainerLeft = styled.div`
 font-size: 1.2rem;
 flex: 2;
-
+display: flex;
+flex-direction: column;
+gap: 1rem;
 `;
 
 export const FeaturedLeftTop = styled.h2`
@@ -41,8 +53,6 @@ font-size: 1.2rem;
 padding-bottom: 10px;
 text-decoration: underline;
 width: 100%;
-
-
 `;
 
 export const FeaturedContainerRight = styled.div`
@@ -67,11 +77,18 @@ export const FeaturedRightTitle= styled.h2`
 font-size: 1.2rem;
 width: 100%;
 
+@media (max-width: 920px) {
+  font-size: 1rem;
+}
 `;
 
 export const FeaturedRightMiddle = styled.p`
 font-size: 1rem;
 padding-bottom: 10px;
+
+@media (max-width: 920px) {
+  font-size: 0.8rem;
+}
 `;
 
 export const FeaturedRightBottom = styled.div`

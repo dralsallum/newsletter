@@ -4,23 +4,27 @@ import { Container, Button } from "../../globalStyles";
 export const Head = styled.div`
   color: Black;
   background-color: #f8f8f8;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
-  margin-top: 2.8rem;
+  margin-top: 3.8rem;
 
+  @media (max-width: 920px) {
+    margin-top: 2.5rem;
+  }
+ 
 `;
 
 
 export const HeaderContainer = styled(Container)`
 display: flex;
 justify-content: space-between;
-height: 200px;
 align-items: center;
 
-${Container}
+${Container};
+
+@media (max-width: 920px) {
+  flex-direction: column;
+  gap: 20px;
+}
 `;
 
 export const HeaderContainerLeft = styled.div`
@@ -28,13 +32,21 @@ font-size: 1.2rem;
 `;
 
 export const HeaderTop = styled.h2`
-font-size: 2.2rem;
+font-size: 2.8rem;
 padding-bottom: 10px;
+
+@media (max-width: 920px) {
+  font-size: 2rem;
+}
 `;
 
 export const HeaderMiddle = styled.p`
-font-size: 1rem;
+font-size: 1.2rem;
 padding-bottom: 10px;
+
+@media (max-width: 920px) {
+  font-size: 1rem;
+}
 `;
 
 export const HeaderBottom = styled.div`
@@ -45,8 +57,12 @@ display: flex;
 
 export const HeaderBottomInput = styled.input`
 width: 80%;
-padding-left: 10px;
+padding: 10px;
 border-radius: 5px;
+
+@media (max-width: 920px) {
+  padding: 8px;
+}
 `;
 
 
@@ -67,7 +83,12 @@ align-items: center;
 `;
 
 export const HeaderRightImg = styled.img`
-height: 70%;
-width: 70%;
+height: 90%;
+width: 90%;
 border: 5px solid #000000;
+
+@media (max-width: 920px) {
+  height: 90%;
+  width: 90%;
+}
 `
