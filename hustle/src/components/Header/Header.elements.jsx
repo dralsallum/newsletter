@@ -13,6 +13,7 @@ export const Head = styled.div`
 
 `;
 
+
 export const HeaderContainer = styled(Container)`
 display: flex;
 justify-content: space-between;

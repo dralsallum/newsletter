@@ -2,6 +2,8 @@ import React from "react";
 import {
   Navbar,
   Header,
+  Featured,
+  Footer,
 } from "../components";
 
 const Home = () => {
@@ -9,6 +11,8 @@ const Home = () => {
     <div>
       <Navbar />
       <Header />
+      <Featured />
+      <Footer />
     </div>
   );
 };
